@@ -59,7 +59,7 @@ describe("MiniWeatherCard Component", () => {
     expect(temperatureSection).toBeInTheDocument();
   });
 
-  it("displays the correct weather code description", () => {
+  it("should display the correct weather code description", () => {
     render(<MiniWeatherCard time={mockTime} values={mockValues} />);
 
     const weatherDescription = screen.getByText(

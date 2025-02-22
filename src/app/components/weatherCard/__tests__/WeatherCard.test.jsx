@@ -26,7 +26,7 @@ describe("WeatherCard Component", () => {
     formatDate.mockReturnValue("February 21, 2025");
   });
 
-  it("renders WeatherCard component with correct information", () => {
+  it("should render WeatherCard component with correct information", () => {
     render(
       <WeatherCard
         time={mockTime}
@@ -56,7 +56,7 @@ describe("WeatherCard Component", () => {
     expect(weatherDescription).toBeInTheDocument();
   });
 
-  it("checks the aria-labels for accessibility", () => {
+  it("should check the aria-labels for accessibility", () => {
     render(
       <WeatherCard
         time={mockTime}
@@ -99,7 +99,7 @@ describe("WeatherCard Component", () => {
     expect(precipitationSection).toBeInTheDocument();
   });
 
-  it("displays the correct weather description based on weatherCodeMax", () => {
+  it("should display the correct weather description based on weatherCodeMax", () => {
     render(
       <WeatherCard
         time={mockTime}

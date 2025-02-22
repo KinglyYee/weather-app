@@ -13,7 +13,7 @@ describe("SearchDropdownMenu Component", () => {
     setLocation = jest.fn();
   });
 
-  it("renders SearchDropdownMenu component with city options", () => {
+  it("should renders SearchDropdownMenu component with city options", () => {
     render(
       <SearchDropdownMenu
         location={location}
