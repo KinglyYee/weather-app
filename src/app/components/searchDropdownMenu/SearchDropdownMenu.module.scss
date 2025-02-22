@@ -1,0 +1,54 @@
+@use "../../styles/variables.module.scss" as *;
+
+.searchDropdownMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-bg-color;
+  border: 1px solid $white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: $spacing-medium;
+  width: 350px;
+  margin: $spacing-medium auto;
+  text-align: center;
+}
+
+.header {
+  font-size: $font-size-medium;
+  font-weight: $font-weight-bold;
+  color: $white;
+  margin-bottom: $spacing-medium;
+  font-family: $font-family;
+}
+
+.form {
+  width: 100%;
+}
+
+.select {
+  width: 100%;
+  padding: $spacing-small $spacing-medium;
+  font-size: $font-size-small;
+  font-family: $font-family;
+  color: $black;
+  background-color: $white;
+  border: 2px solid $white;
+  border-radius: 5px;
+  cursor: pointer;
+
+  option {
+    padding: $spacing-small;
+  }
+}
+
+@media (max-width: 768px) {
+  .searchDropdownMenu {
+    padding: $spacing-small;
+  }
+
+  .header {
+    font-size: $font-size-small;
+  }
+}

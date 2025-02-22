@@ -1,0 +1,20 @@
+@use "../../styles/variables.module.scss" as *;
+
+.header {
+  background-color: $primary-bg-color;
+  padding: $spacing-large;
+  text-align: center;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: $font-size-xlarge;
+  font-weight: 700;
+}
+
+.tagline {
+  font-size: $font-size-small;
+  font-weight: 400;
+  margin-top: $spacing-medium;
+}
