@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import Header from "../Header";
 
-describe("Header Component test cases", () => {
+describe("Header Component", () => {
   it("should render the title correctly", () => {
     render(<Header />);
     const titleElement = screen.getByText("Weather App");

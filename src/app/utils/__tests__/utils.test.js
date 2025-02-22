@@ -25,7 +25,7 @@ describe("Utility functions", () => {
     expect(iconPath).toBe(expectedIconPath);
   });
 
-  test("should return icon for a different valid weather code", () => {
+  it("should return icon for a different valid weather code", () => {
     const weatherCode = 1101;
     const expectedIconPath = "/assets/color/partly_cloudy_day.svg";
 
